@@ -2,7 +2,7 @@
 package ipwhitelist
 
 import (
-	"github.com/cuongvn98/libs/ip"
+	"github.com/cuongvn98/golibs/ip"
 	"net/http"
 	"strings"
 

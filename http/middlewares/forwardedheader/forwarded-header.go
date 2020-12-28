@@ -1,7 +1,7 @@
 package forwardedheader
 
 import (
-	"github.com/cuongvn98/libs/ip"
+	"github.com/cuongvn98/golibs/ip"
 	"net"
 	"net/http"
 	"strings"

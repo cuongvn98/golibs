@@ -1,7 +1,7 @@
 package forwardedheader
 
 import (
-	"github.com/hirosume/libs/ip"
+	"github.com/cuongvn98/libs/ip"
 	"net"
 	"net/http"
 	"strings"

@@ -2,7 +2,7 @@
 package ipwhitelist
 
 import (
-	"github.com/hirosume/libs/ip"
+	"github.com/cuongvn98/libs/ip"
 	"net/http"
 	"strings"
 

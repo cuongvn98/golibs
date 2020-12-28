@@ -1,4 +1,4 @@
-module github.com/hirosume/libs
+module github.com/cuongvn98/libs
 
 go 1.15
 

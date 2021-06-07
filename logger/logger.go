@@ -1,6 +1,9 @@
 package logger
 
-import "github.com/sirupsen/logrus"
+import (
+	"github.com/sirupsen/logrus"
+	"go.uber.org/zap"
+)
 
 type Logger struct {
 	*logrus.Logger
@@ -15,4 +18,15 @@ func New(level string, caller bool) (*Logger, error) {
 	logger.SetLevel(l)
 	logger.SetReportCaller(caller)
 	return &Logger{Logger: logger}, nil
+}
+
+func NewZap(isDev bool) (*zap.Logger, error) {
+	var logger *zap.Logger
+	var err error
+	if isDev {
+		logger, err = zap.NewDevelopment()
+	} else {
+		logger, err = zap.NewProduction()
+	}
+	return logger, err
 }

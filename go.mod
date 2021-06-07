@@ -10,5 +10,7 @@ require (
 	github.com/sirupsen/logrus v1.7.0
 	github.com/spf13/viper v1.7.1
 	github.com/vulcand/oxy v1.1.0
+	go.uber.org/multierr v1.7.0 // indirect
+	go.uber.org/zap v1.17.0 // indirect
 	golang.org/x/sys v0.0.0-20201231184435-2d18734c6014 // indirect
 )
